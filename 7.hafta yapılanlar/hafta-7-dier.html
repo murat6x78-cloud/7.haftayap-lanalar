@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+var x=prompt("Lütfen 0 ve 10 arasında bir sayı giriniz");
+try{
+if(x>0 && x<10){
+    document.write("Girdiğiniz sayı: " + x + "<br>");
+}
+if(x<=0){
+        throw "err1";
+    }
+    if(x>10){
+        throw "err2";
+    }
+}
+catch(er){
+    if(er="err1")
+    alert("küçük bir sayı girdin");
+}
+var txt="murat";
+document.write(txt[2]);
+
+var email;
+function emailyazdir(){
+   email=document.getElementById("email").value;
+    document.write(email);
+}
+
+    </script>
+</head>
+<body>
+    <form>
+<input type="text" name="email" placeholder="email giriniz giriniz" onchange="email" >
+
+    </form>
+</body>
+</html>
